@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "UniversLTStd-Black.woff2";
+  src: url("./fonts/Univers/UniversLTStd-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniversLTStd-Bold.woff2";
+  src: url("./fonts/Univers/UniversLTStd-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniversLTStd.woff2";
+  src: url("./fonts/Univers/UniversLTStd.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniversLTStd-BoldCn.woff2";
+  src: url("./fonts/Univers/UniversLTStd-BoldCn.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-family: "UniversLTStd-Black.woff2";
+}
+
+h2 {
+  font-family: "UniversLTStd-Bold.woff2";
+}
+
+h3 {
+  font-family: "UniversLTStd-Bold.woff2";
+}
+
+h4 {
+  font-family: "UniversLTStd-BoldCn.woff2";
+}
+
+h5,
+h6 {
+  font-family: "UniversLTStd.woff2";
+}
