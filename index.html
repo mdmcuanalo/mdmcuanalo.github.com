@@ -1,43 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>María Daniela Morales</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header grid">
-      <h1>
-        MARÍA<br />
-        DANIELA<br />
-        MORALES<br />
-        CUANALO
-      </h1>
-    </header>
-    <!-- <div>
-      <p>
-        Según la RAE, la identidad se define como “un conjunto de rasgos propios
-        de un individuo o de una colectividad que los caracterizan frente a los
-        demás”. Es decir, es lo que nos hace saber qué es lo que hace a algo
-        único. Palo de Mora es un proyecto de diseño de identidad para una
-        tienda de productos orgánicos de alta calidad.
-      </p>
-      <br />
-      <p>
-        La identidad de este proyecto nace del apellido “Morales”, que significa
-        “moral” o “morera”. Fue por esto, que decidí enforcarme en el Moral, un
-        árbol que es el único alimento para los gusanos de seda, también
-        conocido como Palo de mora. A partir de esto, definí mis conceptos
-        rectores: transformación, ciclo, orgánico, alimento y calidad. Con base
-        a mis conceptos, definí una paleta de color y comencé a diseñar un logo
-        a partir del uso de círculos, los que eventualmente me permitieron
-        diseñar los patrones para diferentes aplicaciones de la tienda.
-      </p>
-    </div> -->
-  </body>
-</html>
+@font-face {
+  font-family: "UniversLTStd-BoldCn.woff2";
+  src: url("./fonts/Univers/UniversLTStd-BoldCn.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniversLTStd.woff2";
+  src: url("./fonts/Univers/UniversLTStd.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-family: "UniversLTStd-BoldCn.woff2";
+}
+
+h2 {
+  font-family: "UniversLTStd-BoldCn.woff2";
+}
+
+h3 {
+  font-family: "UniversLTStd-BoldCn.woff2";
+}
+
+h4 {
+  font-family: "UniversLTStd.woff2";
+}
+
+/* Tipografía */
+/*
+  Tu tipografia va aqui
+*/
+/* Variables */
+:root {
+  --primario: #7f7ffb;
+  --primario-claro: ##b4aeff;
+  --primario-fuerte: #4853c7;
+  --secundario: #ff1744;
+  --secundario-claro: #FFFFF;
+  --secundario-fuerte: #000000;
+  --bg: #000000;
+  --font-base: "Playfair Display", serif;
+  --font-headings: "UniversLTStd-BoldCn.woff2";
+  --h1: 121px;
+  --h2: 81px;
+  --h3: 54px;
+  --font-headings-2: "UniversLTStd.woff2";
+  --h4: 50px;
+}
+/* Base */
+/*
+  Elementos base van aqui
+*/
+body {
+  font-family: var(--font-base);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+/* Componentes */
+.header {
+  background-color: #fefefe;
+  color: #7f7ffb;
+  height: 100vh;
+}
+
+.header h1 {
+  line-height: 0.9;
+  margin: 32vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+}
+
+.logohome {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logohome:hover {
+  fill: #ff1744;
+}
+
+.logomenu {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logomenu:hover {
+  fill: #ff1744;
+}
+
+.logobehance {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logobehance:hover {
+  fill: #ff1744;
+}
+
+.logoinsta {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logoinsta:hover {
+  fill: #ff1744;
+}
+
+.logolinkedin {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logolinkedin:hover {
+  fill: #ff1744;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-items: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.grid-center {
+  place-content: center;
+}
+
+.grid-start {
+  place-content: start;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.outline {
+  outline: 2px solid black;
+}
