@@ -1,4 +1,4 @@
-@font-face {
+v@font-face {
   font-family: "UniversLTStd-BoldCn.woff2";
   src: url("./fonts/Univers/UniversLTStd-BoldCn.woff2") format("woff2");
   font-style: normal;
@@ -90,7 +90,7 @@ h6 {
 }
 /* Componentes */
 .header {
-  background-color: #000000;
+  background-color: #fefefe;
   color: #7f7ffb;
   height: 100vh;
 }
@@ -98,6 +98,56 @@ h6 {
 .header h1 {
   line-height: 0.9;
   margin: 32vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+}
+
+.logohome {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logohome:hover {
+  fill: #ff1744;
+}
+
+.logomenu {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logomenu:hover {
+  fill: #ff1744;
+}
+
+.logobehance {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logobehance:hover {
+  fill: #ff1744;
+}
+
+.logoinsta {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logoinsta:hover {
+  fill: #ff1744;
+}
+
+.logolinkedin {
+  max-width: 32px;
+  max-height: 32px;
+  fill: #7f7ffb;
+}
+
+.logolinkedin:hover {
+  fill: #ff1744;
 }
 
 /* Utilities */
