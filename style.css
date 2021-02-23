@@ -1,4 +1,4 @@
-v@font-face {
+@font-face {
   font-family: "UniversLTStd-BoldCn.woff2";
   src: url("./fonts/Univers/UniversLTStd-BoldCn.woff2") format("woff2");
   font-style: normal;
@@ -97,13 +97,14 @@ h6 {
 
 .header h1 {
   line-height: 0.9;
-  margin: 32vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+  margin: 8vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
 }
 
 .logohome {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
+  margin: 4vh 0 0 5vw;
 }
 
 .logohome:hover {
@@ -114,6 +115,7 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
+  margin: 4vh 0 0 86vw;
 }
 
 .logomenu:hover {
@@ -124,6 +126,7 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
+  margin: 1.5vh 0 0 93.5vw;
 }
 
 .logobehance:hover {
@@ -134,6 +137,7 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
+  margin: 1vh 0 0 93.5vw;
 }
 
 .logoinsta:hover {
@@ -144,6 +148,7 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
+  margin: 1vh 0 0 93.5vw;
 }
 
 .logolinkedin:hover {
