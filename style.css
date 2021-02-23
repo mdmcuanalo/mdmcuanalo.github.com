@@ -89,9 +89,17 @@ h6 {
   font-size: var(--h6);
 }
 /* Componentes */
-/*
-  Componentes van aqui
-*/
+.header {
+  background-color: #000000;
+  color: #7f7ffb;
+  height: 100vh;
+}
+
+.header h1 {
+  line-height: 0.9;
+  margin: 40vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+}
+
 /* Utilities */
 .flex {
   display: flex;
@@ -105,6 +113,10 @@ h6 {
 }
 .grid-center {
   place-content: center;
+}
+
+.grid-start {
+  place-content: start;
 }
 .mx-auto {
   margin: 0 auto;
