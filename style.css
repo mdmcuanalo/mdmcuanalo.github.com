@@ -97,7 +97,7 @@ h6 {
 
 .header h1 {
   line-height: 0.9;
-  margin: 40vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+  margin: 32vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
 }
 
 /* Utilities */
