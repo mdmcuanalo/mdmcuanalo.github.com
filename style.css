@@ -49,7 +49,7 @@ h4 {
   --bg: #000000;
   --font-base: "Playfair Display", serif;
   --font-headings: "UniversLTStd-BoldCn.woff2";
-  --h1: 121px;
+  --h1: 152.59px;
   --h2: 81px;
   --h3: 54px;
   --font-headings-2: "UniversLTStd.woff2";
@@ -92,12 +92,12 @@ h6 {
 .header {
   background-color: #fefefe;
   color: #7f7ffb;
-  height: 100vh;
+  height: 0vh;
 }
 
 .header h1 {
   line-height: 0.9;
-  margin: 8vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+  margin: 1vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
 }
 
 .logohome {
