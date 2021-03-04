@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "UniversLTStd-BoldCn.woff2";
-  src: url("./fonts/Univers/UniversLTStd-BoldCn.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal;
-}
-
+/* Tipografia */
 @font-face {
   font-family: "UniversLTStd.woff2";
   src: url("./fonts/Univers/UniversLTStd.woff2") format("woff2");
@@ -13,9 +7,27 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+/* Variables */
+:root {
+  --primario: #7f7ffb;
+  --primario-claro: ##b4aeff;
+  --primario-fuerte: #4853c7;
+  --secundario: #ff1744;
+  --secundario-claro: #FFFFF;
+  --secundario-fuerte: #000000;
+  --bg: #000000;
+  --font-base: "Playfair Display", serif;
+  --font-headings: "UniversLTStd-BoldCn.woff2";
+  --h1: 152.59px;
+  --h2: 81px;
+  --h3: 54px;
+  --font-headings-2: "UniversLTStd.woff2";
+  --h4: 50px;
+}
 
+/* Base */
 body {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-base);
 }
 
 h1 {
@@ -34,34 +46,6 @@ h4 {
   font-family: "UniversLTStd.woff2";
 }
 
-/* Tipografía */
-/*
-  Tu tipografia va aqui
-*/
-/* Variables */
-:root {
-  --primario: #7f7ffb;
-  --primario-claro: ##b4aeff;
-  --primario-fuerte: #4853c7;
-  --secundario: #ff1744;
-  --secundario-claro: #FFFFF;
-  --secundario-fuerte: #000000;
-  --bg: #000000;
-  --font-base: "Playfair Display", serif;
-  --font-headings: "UniversLTStd-BoldCn.woff2";
-  --h1: 152.59px;
-  --h2: 81px;
-  --h3: 54px;
-  --font-headings-2: "UniversLTStd.woff2";
-  --h4: 50px;
-}
-/* Base */
-/*
-  Elementos base van aqui
-*/
-body {
-  font-family: var(--font-base);
-}
 h1,
 h2,
 h3,
@@ -88,16 +72,21 @@ h5 {
 h6 {
   font-size: var(--h6);
 }
+
 /* Componentes */
 .header {
   background-color: #fefefe;
   color: #7f7ffb;
-  height: 0vh;
+  /* height: 0vh; */
 }
 
 .header h1 {
   line-height: 0.9;
   margin: 1vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+}
+
+.navigation {
+  display: grid;
 }
 
 .logohome {
