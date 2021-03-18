@@ -1,7 +1,16 @@
 /* Tipografia */
 @font-face {
-  font-family: "UniversLTStd.woff2";
-  src: url("./fonts/Univers/UniversLTStd.woff2") format("woff2");
+  font-family: "UniversLTStd";
+  src: url("https://res.cloudinary.com/mdmcuanalo/raw/upload/v1616079433/Portafolio/UniversLTStd_xw2g9l.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniversLTStd-BoldCn";
+  src: url("https://res.cloudinary.com/mdmcuanalo/raw/upload/v1616079547/Portafolio/UniversLTStd-BoldCn_r68zv3.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -17,11 +26,11 @@
   --secundario-fuerte: #000000;
   --bg: #000000;
   --font-base: "Playfair Display", serif;
-  --font-headings: "UniversLTStd-BoldCn.woff2";
+  --font-headings: "UniversLTStd-BoldCn";
   --h1: 152.59px;
   --h2: 81px;
   --h3: 54px;
-  --font-headings-2: "UniversLTStd.woff2";
+  --font-headings-2: "UniversLTStd";
   --h4: 50px;
 }
 
@@ -30,29 +39,14 @@ body {
   font-family: var(--font-base);
 }
 
-h1 {
-  font-family: "UniversLTStd-BoldCn.woff2";
-}
-
-h2 {
-  font-family: "UniversLTStd-BoldCn.woff2";
-}
-
+h1,
+h2,
 h3 {
-  font-family: "UniversLTStd-BoldCn.woff2";
+  font-family: var(--font-headings);
 }
 
 h4 {
-  font-family: "UniversLTStd.woff2";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-headings);
+  font-family: var(--font-headings-2);
 }
 h1 {
   font-size: var(--h1);
@@ -144,6 +138,52 @@ h6 {
   fill: #ff1744;
 }
 
+/* Categoria */
+.categoria {
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "web branding"
+    "tipografia ilustrations"
+    "sintesis ilustrations";
+}
+
+.categoria-imagen [data-category="web"] {
+  grid-area: web;
+}
+.categoria-imagen [data-category="web"] img {
+  width: 800px;
+  height: 400px;
+}
+.categoria-imagen [data-category="branding"] {
+  grid-area: branding;
+}
+.categoria-imagen [data-category="branding"] img {
+  /* width: 800px;
+  height: 400px; */
+}
+.categoria-imagen [data-category="tipografia"] {
+  grid-area: tipografia;
+}
+.categoria-imagen [data-category="tipografia"] img {
+  /* width: 800px;
+  height: 400px; */
+}
+.categoria-imagen [data-category="sintesis"] {
+  grid-area: sintesis;
+}
+.categoria-imagen [data-category="sintesis"] img {
+  /* width: 800px;
+  height: 400px; */
+}
+.categoria-imagen [data-category="ilustrations"] {
+  grid-area: ilustrations;
+}
+.categoria-imagen [data-category="ilustrations"] img {
+  /* width: 800px;
+  height: 400px; */
+}
 /* Utilities */
 .flex {
   display: flex;
