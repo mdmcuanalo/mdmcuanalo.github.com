@@ -1,0 +1,1 @@
+Cómo poner la imagen hover sobre las fotos del grid.
