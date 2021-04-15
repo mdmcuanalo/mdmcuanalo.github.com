@@ -76,11 +76,14 @@ h6 {
 
 .header h1 {
   line-height: 0.9;
-  margin: 1vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+  margin: -3vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+  margin-bottom: 4vh;
 }
 
-.navigation {
-  display: grid;
+.navigation ul {
+  list-style-type: none;
+  margin: -5vh 0 0 90vw;
+  line-height: 5vh;
 }
 
 .logohome {
@@ -98,7 +101,7 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
-  margin: 4vh 0 0 86vw;
+  margin-bottom: 4vh;
 }
 
 .logomenu:hover {
@@ -109,7 +112,6 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
-  margin: 1.5vh 0 0 93.5vw;
 }
 
 .logobehance:hover {
@@ -120,7 +122,6 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
-  margin: 1vh 0 0 93.5vw;
 }
 
 .logoinsta:hover {
@@ -131,7 +132,6 @@ h6 {
   max-width: 32px;
   max-height: 32px;
   fill: #7f7ffb;
-  margin: 1vh 0 0 93.5vw;
 }
 
 .logolinkedin:hover {
@@ -139,7 +139,7 @@ h6 {
 }
 
 /* Categoria */
-.categoria {
+/* .categoria {
   height: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -147,43 +147,24 @@ h6 {
     "web branding"
     "tipografia ilustrations"
     "sintesis ilustrations";
+} */
+
+/* Cambio a flex */
+.categoria {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4vh 0 0 0;
 }
 
-.categoria-imagen [data-category="web"] {
-  grid-area: web;
+.categoria-imagen {
+  /* flex: 1 0 35vw; */
+  flex: 1 0 auto;
 }
-.categoria-imagen [data-category="web"] img {
-  width: 800px;
-  height: 400px;
+
+.cat-vertical {
+  display: grid;
 }
-.categoria-imagen [data-category="branding"] {
-  grid-area: branding;
-}
-.categoria-imagen [data-category="branding"] img {
-  /* width: 800px;
-  height: 400px; */
-}
-.categoria-imagen [data-category="tipografia"] {
-  grid-area: tipografia;
-}
-.categoria-imagen [data-category="tipografia"] img {
-  /* width: 800px;
-  height: 400px; */
-}
-.categoria-imagen [data-category="sintesis"] {
-  grid-area: sintesis;
-}
-.categoria-imagen [data-category="sintesis"] img {
-  /* width: 800px;
-  height: 400px; */
-}
-.categoria-imagen [data-category="ilustrations"] {
-  grid-area: ilustrations;
-}
-.categoria-imagen [data-category="ilustrations"] img {
-  /* width: 800px;
-  height: 400px; */
-}
+
 /* Utilities */
 .flex {
   display: flex;
