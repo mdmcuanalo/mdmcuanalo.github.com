@@ -284,10 +284,7 @@ h6 {
   opacity: 0;
   z-index: 2;
   transition-delay: 0.1s;
-  font-size: 24px; /*cambiar*/
-  font-family: sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-transform: uppercase;
 }
 
