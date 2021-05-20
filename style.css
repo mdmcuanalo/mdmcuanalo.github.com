@@ -35,7 +35,9 @@
 }
 
 /* Base */
-body {
+
+body,
+p {
   font-family: var(--font-base);
 }
 
@@ -157,7 +159,6 @@ h6 {
 }
 
 .categoria-imagen {
-  /* flex: 1 0 35vw; */
   flex: 0 0 auto;
 }
 
@@ -215,7 +216,7 @@ h6 {
 .categoria {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -299,4 +300,24 @@ h6 {
 
 .hover-img:hover figcaption {
   opacity: 1;
+}
+
+.about {
+  color: #7f7ffb;
+  margin: 9vh 0 0 5vw;
+}
+
+.about p {
+  color: black;
+  margin: 3vh 10vw 28vh 55vw;
+}
+
+.contact {
+  color: #7f7ffb;
+  margin: 15vh 0 0 5vw;
+}
+
+.contact p {
+  color: black;
+  margin: 3vh 10vw 35vh 55vw;
 }
