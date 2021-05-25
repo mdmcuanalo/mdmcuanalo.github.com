@@ -69,8 +69,17 @@ h6 {
   font-size: var(--h6);
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Componentes */
+.layout {
+  min-height: 100vh;
+}
+
 .header {
+  display: grid;
   background-color: #fefefe;
   color: #7f7ffb;
   /* height: 0vh; */
@@ -80,6 +89,15 @@ h6 {
   line-height: 0.9;
   margin: -3vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
   margin-bottom: 4vh;
+}
+
+@media screen and (max-width: 415px) {
+  .header h1 {
+    --h1: "40px";
+    line-height: 0.9;
+    margin: -3vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+    margin-bottom: 4vh;
+  }
 }
 
 .navigation ul {
@@ -253,7 +271,7 @@ h6 {
 
 .hover-img:before,
 .hover-img:after {
-  background-color: var(--primario);
+  background-color: var(--primario-fuerte);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -320,4 +338,80 @@ h6 {
 .contact p {
   color: black;
   margin: 3vh 10vw 35vh 55vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.hover2-img {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+
+.hover2-img * {
+  transition: all 0.45s ease;
+}
+
+.hover2-img:before,
+.hover2-img:after {
+  background-color: var(--secundario);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.hover2-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hover2-img figcaption {
+  position: absolute;
+  top: 40vh;
+  bottom: 0;
+  left: 4vh;
+  right: 0;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.hover2-img:hover:before,
+.hover2-img:hover:after {
+  opacity: 0.4;
+}
+
+.hover2-img:hover > img {
+  opacity: 0.7;
+}
+
+.hover2-img:hover figcaption {
+  opacity: 1;
+}
+
+.description-option {
+  font-size: 6vh;
 }
