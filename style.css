@@ -27,11 +27,11 @@
   --bg: #000000;
   --font-base: "Playfair Display", serif;
   --font-headings: "UniversLTStd-BoldCn";
-  --h1: 152.59px;
+  --h1: 10vw;
   --h2: 81px;
-  --h3: 54px;
+  --h3: 5vw;
   --font-headings-2: "UniversLTStd";
-  --h4: 50px;
+  --h4: 40px;
 }
 
 /* Base */
@@ -87,16 +87,22 @@ img {
 
 .header h1 {
   line-height: 0.9;
-  margin: -3vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+  margin: 28vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
   margin-bottom: 4vh;
 }
 
 @media screen and (max-width: 415px) {
   .header h1 {
-    --h1: "40px";
     line-height: 0.9;
-    margin: -3vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
-    margin-bottom: 4vh;
+    margin: 0 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
+    margin-top: 77vh;
+  }
+  .navigation ul {
+    margin: -5vh 0 0 90vw;
+  }
+  .contact p {
+    color: black;
+    margin: 3vh 10vw 35vh 55vw;
   }
 }
 
@@ -106,56 +112,62 @@ img {
   line-height: 5vh;
 }
 
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
 .logohome {
   max-width: 32px;
   max-height: 32px;
-  fill: #7f7ffb;
+  fill: var(--primario);
   margin: 4vh 0 0 5vw;
 }
 
 .logohome:hover {
-  fill: #ff1744;
+  fill: var(--secundario);
 }
 
 .logomenu {
   max-width: 32px;
   max-height: 32px;
-  fill: #7f7ffb;
+  fill: var(--primario);
   margin-bottom: 4vh;
 }
 
 .logomenu:hover {
-  fill: #ff1744;
+  fill: var(--secundario);
 }
 
 .logobehance {
   max-width: 32px;
   max-height: 32px;
-  fill: #7f7ffb;
+  fill: var(--primario);
 }
 
 .logobehance:hover {
-  fill: #ff1744;
+  fill: var(--secundario);
 }
 
 .logoinsta {
   max-width: 32px;
   max-height: 32px;
-  fill: #7f7ffb;
+  fill: var(--primario);
 }
 
 .logoinsta:hover {
-  fill: #ff1744;
+  fill: var(--secundario);
 }
 
 .logolinkedin {
   max-width: 32px;
   max-height: 32px;
-  fill: #7f7ffb;
+  fill: var(--primario);
 }
 
 .logolinkedin:hover {
-  fill: #ff1744;
+  fill: var(--secundario);
 }
 
 /* Categoria */
@@ -262,7 +274,7 @@ img {
   height: auto;
   overflow: hidden;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 .hover-img * {
@@ -271,7 +283,7 @@ img {
 
 .hover-img:before,
 .hover-img:after {
-  background-color: var(--primario-fuerte);
+  background-color: var(--primario);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -291,14 +303,14 @@ img {
 
 .hover-img figcaption {
   position: absolute;
-  top: 0;
+  top: 8vh;
   bottom: 0;
-  left: 0;
+  left: 5vh;
   right: 0;
-  align-items: center;
+  align-items: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   line-height: 1.1em;
   opacity: 0;
   z-index: 2;
@@ -309,7 +321,7 @@ img {
 
 .hover-img:hover:before,
 .hover-img:hover:after {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .hover-img:hover > img {
@@ -322,7 +334,7 @@ img {
 
 .about {
   color: #7f7ffb;
-  margin: 9vh 0 0 5vw;
+  margin: 16vh 0 0 5vw;
 }
 
 .about p {
@@ -332,7 +344,7 @@ img {
 
 .contact {
   color: #7f7ffb;
-  margin: 15vh 0 0 5vw;
+  margin: 16vh 0 0 5vw;
 }
 
 .contact p {
@@ -383,7 +395,7 @@ img {
 
 .hover2-img figcaption {
   position: absolute;
-  top: 40vh;
+  top: 42vh;
   bottom: 0;
   left: 4vh;
   right: 0;
@@ -413,5 +425,5 @@ img {
 }
 
 .description-option {
-  font-size: 6vh;
+  font-size: 5vh;
 }
