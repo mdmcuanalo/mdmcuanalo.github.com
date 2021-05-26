@@ -92,10 +92,17 @@ img {
 }
 
 @media screen and (max-width: 415px) {
+  .header {
+    max-height: 100vh;
+  }
   .header h1 {
-    line-height: 0.9;
-    margin: 0 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
-    margin-top: 77vh;
+    /* margin: 75vh 0 0 5vw; */
+    margin-top: auto;
+  }
+
+  /* .header h1 {
+    margin: 0 0 0 5vw;
+    margin-top: 75vh;
   }
   .navigation ul {
     margin: -5vh 0 0 90vw;
@@ -103,7 +110,7 @@ img {
   .contact p {
     color: black;
     margin: 3vh 10vw 35vh 55vw;
-  }
+  } */
 }
 
 .navigation ul {
