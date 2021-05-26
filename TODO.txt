@@ -1,4 +1,2 @@
-Cómo puedo cambiar el peso de la tipografía dentro de un mismo párrafo (Hover de Palo de Mora 2020)
-Cómo cambiar el color de la tipografía de sólo una palabra dentro de un párrafo (Nombre y mail en la parte de contacto)
 Cómo programo una popup window para la información de cada proyecto
 Cómo programo que cuando le des click a cada botón principal haga scroll down hasta la sección correspondiente.
