@@ -87,8 +87,7 @@ img {
 
 .header h1 {
   line-height: 0.9;
-  margin: 28vh 0 0 5vw; /*primeros dos vh y ultimos dos vw*/
-  margin-bottom: 4vh;
+  margin: 28vh 0 3vh 5vw; /*primeros dos vh y ultimos dos vw*/
 }
 
 @media screen and (max-width: 415px) {
@@ -125,6 +124,19 @@ img {
   width: 100%;
   z-index: 3;
 }
+@media screen and (max-width: 415px) {
+  .navigation,
+  .header {
+    height: 100vh;
+    max-width: 100vw;
+  }
+
+  .navigation ul {
+    margin: 0 0 0 0;
+    padding-left: 84vw;
+  }
+}
+
 .logohome {
   max-width: 32px;
   max-height: 32px;
@@ -310,14 +322,14 @@ img {
 
 .hover-img figcaption {
   position: absolute;
-  top: 8vh;
+  top: 0;
   bottom: 0;
-  left: 5vh;
+  left: 0;
   right: 0;
-  align-items: left;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   line-height: 1.1em;
   opacity: 0;
   z-index: 2;
@@ -347,16 +359,6 @@ img {
 .about p {
   color: black;
   margin: 3vh 10vw 28vh 55vw;
-}
-
-.contact {
-  color: #7f7ffb;
-  margin: 16vh 0 0 5vw;
-}
-
-.contact p {
-  color: black;
-  margin: 3vh 10vw 35vh 55vw;
 }
 
 .grid-container {
@@ -402,14 +404,14 @@ img {
 
 .hover2-img figcaption {
   position: absolute;
-  top: 42vh;
+  top: 5vh;
   bottom: 0;
-  left: 4vh;
+  left: 0;
   right: 0;
-  align-items: left;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   line-height: 1.1em;
   opacity: 0;
   z-index: 2;
@@ -432,5 +434,15 @@ img {
 }
 
 .description-option {
-  font-size: 5vh;
+  font-size: 5.5vh;
+}
+
+.contact {
+  color: #7f7ffb;
+  margin: 16vh 0 0 5vw;
+}
+
+.contact p {
+  color: black;
+  margin: 3vh 10vw 36vh 55vw;
 }
