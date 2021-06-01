@@ -216,6 +216,7 @@ img {
 }
 
 /* Utilities */
+
 .flex {
   display: flex;
 }
@@ -284,6 +285,34 @@ img {
 }
 .cat-imagen5 {
   grid-area: 3 / 2 / 5 / 3;
+}
+
+@media screen and (max-width: 600px) {
+  .categoria {
+    display: flex;
+    flex-direction: column;
+    /* margin: 4vh 0 0 0; */
+    margin: 0;
+    /* gap: 1rem; */
+    /* padding: 1rem; */
+    /* background-color: aquamarine; */
+  }
+
+  /* .categoria figure {
+  } */
+
+  .categoria-imagen {
+    flex: unset;
+  }
+
+  .cat-vertical {
+    display: unset;
+    all: unset;
+  }
+
+  /* .categoria im {
+    object-fit: cover;
+  } */
 }
 
 .hover-img {
@@ -445,4 +474,9 @@ img {
 .contact p {
   color: black;
   margin: 3vh 10vw 36vh 55vw;
+}
+
+.section-link {
+  margin: 0;
+  padding: 0;
 }
