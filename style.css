@@ -390,6 +390,13 @@ img {
   margin: 3vh 10vw 28vh 55vw;
 }
 
+@media screen and (max-width: 600px) {
+  .about p {
+    color: black;
+    margin: 3vh 10vw 28vh 0vw;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -466,6 +473,15 @@ img {
   font-size: 5.5vh;
 }
 
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+  }
+}
+
 .contact {
   color: #7f7ffb;
   margin: 16vh 0 0 5vw;
@@ -474,6 +490,13 @@ img {
 .contact p {
   color: black;
   margin: 3vh 10vw 36vh 55vw;
+}
+
+@media screen and (max-width: 600px) {
+  .contact p {
+    color: black;
+    margin: 3vh 10vw 36vh 0vw;
+  }
 }
 
 .section-link {
